@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 1</title>
+</head>
+<body>
+     <button onclick="tambah()">Tambah</button>
+     <p id="teks">0</p>
+     <button onclick="kurang()">Kurang</button>
+     <button onclick="RESET()">RESET</button>
+     <p id="teks2"></p>
+     <script type="text/javascript">
+     	let teksbaru = 0
+
+     	function tambah() {
+     		teksbaru += 10
+     		document.getElementById('teks').innerHTML = teksbaru
+     		document.getElementById('teks2').innerHTML = "TAMBAH"
+     	}
+     	function kurang() {
+     		teksbaru -= 10
+     		document.getElementById('teks').innerHTML = teksbaru
+     		document.getElementById('teks2').innerHTML = "KURANG"
+     	}
+     	function RESET() {
+     		teksbaru =0
+     		document.getElementById('teks').innerHTML = teksbaru
+     		document.getElementById('teks2').innerHTML = "RESET"
+     	}
+     </script>
+</body>
+</html>

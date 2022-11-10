@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Judul Halaman Web</title>
+</head>
+<body>
+		<input type="teks" name="nama"placeholder="Nama" id="nama">
+		<br><br>
+		<input type="teks" name="kelas"placeholder="Kelas" id="kelas">
+		<br><br>
+		<input onclick="klik()" type="submit" value="Kirim">
+		<p id="wadah"></p>
+<script type="text/javascript">
+	function klik() {
+		let nama = document.getElementById('nama').value
+		let kelas = document.getElementById('kelas').value
+		
+		document.getElementById('wadah').innerHTML = nama + ""
+	}
+</script>
+</body>
+</html>
